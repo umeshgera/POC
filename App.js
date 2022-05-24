@@ -1,14 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { ReactNode } from 'react'
+import Routes from './src/route/Routes'
+
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <Routes/>    
   )
 }
 
 export default App
-
-const styles = StyleSheet.create({})
