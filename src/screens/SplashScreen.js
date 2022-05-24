@@ -5,12 +5,12 @@ export default function SplashScreen({ route, navigation }) {
 
     useEffect(() => {
         setTimeout(() => {
-            // navigation.navigate('Loginscreen');
+            navigation.navigate('LoginScreen');
         }, 1000);
     }, [])
 
     return (
-        <View>
+        <View style={{flex:1, backgroundColor:'white'}}>
             <Text style={{ marginTop: 10, textAlign: 'center', fontWeight: 'bold', fontSize: 30 }}>
                 {"Ram Ramji"}
             </Text>
@@ -21,7 +21,7 @@ export default function SplashScreen({ route, navigation }) {
                 <Image
                     style={{ width: 300, height: 450, alignItems: 'center' }}
                     resizeMode="contain"
-                    source={require('../assets/sitaramphoto.jpg')}
+                    source={require('../assets/poclogo.png')}
                 />
             </View>
         </View>
