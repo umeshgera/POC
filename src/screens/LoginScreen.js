@@ -73,15 +73,18 @@ export default function LoginScreen({ route, navigation }) {
                 />
             </View>
 
-            <TouchableOpacity onPress={onPressSignUp}>
-                <Text style={{ textAlign: "center", marginTop: 20, color: "red" }}>
-                    Don't have an account Sign Up
+            <TouchableOpacity onPress={onPressSignUp} style={{flexDirection:'row', justifyContent:'center' }}>
+                <Text style={{ textAlign: "center", marginTop: 20, color: "red",}}>
+                   {"Don't have an account "}
+                </Text>
+                <Text style={{ textAlign: "center", marginTop: 20, color: "red", textDecorationLine:"underline"}}>
+                    {"Sign Up"}
                 </Text>
             </TouchableOpacity>
 
 
             <TouchableOpacity onPress={onPressForgot}>
-                <Text style={{ textAlign: "center", marginTop: 20, color: "red" }}>
+                <Text style={{ textAlign: "center", marginTop: 20, color: "red", textDecorationLine:"underline"}}>
                     Forgot Password
                 </Text>
             </TouchableOpacity>

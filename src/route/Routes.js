@@ -22,11 +22,13 @@ const Stack = createNativeStackNavigator();
           name="LoginScreen" component={LoginScreen} />
           
           
-          <Stack.Screen  options={{headerShown: false}}  
-          name="Signup" component={Signup} />
+          <Stack.Screen
+            options={{headerTitle:'Register', headerTintColor:'black', headerTitleAlign:'left'}}  
+            name="Signup" component={Signup} />
           
           
-          <Stack.Screen  options={{headerShown: false}}  
+          <Stack.Screen 
+           options={{headerTitle:'Forgot', headerTintColor:'black', headerTitleAlign:'center'}}  
           name="ForgotPassword" component={ForgotPassword} />
           
           
